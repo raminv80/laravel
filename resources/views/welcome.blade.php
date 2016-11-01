@@ -27,6 +27,7 @@
             @endif
 
             <div class="content">
+                <img src="/images/logo.jpg" alt="hybrid logo">
                 <div class="title m-b-md">
                     Laravel
                 </div>
