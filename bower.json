@@ -1,0 +1,21 @@
+{
+  "name": "laravel",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ramin Vakilian <ramin@hybridmarketing.com.au>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/raminv80/laravel",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
