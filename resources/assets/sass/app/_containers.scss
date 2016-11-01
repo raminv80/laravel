@@ -36,24 +36,26 @@ body {
   margin-bottom: 30px;
 }
 
-.links a{
-  &:first-child{
-    color: $yellow;
-  }
+.links {
+  a {
+    &:first-child {
+      color: $yellow;
+    }
 
-  &:nth-child(2){
-    color: $light-green;
-  }
+    &:nth-child(2) {
+      color: $light-green;
+    }
 
-  &:nth-child(3){
-    color: $green;
-  }
+    &:nth-child(3) {
+      color: $green;
+    }
 
-  &:nth-child(4){
-    color: $light-blue;
-  }
+    &:nth-child(4) {
+      color: $light-blue;
+    }
 
-  &:last-child{
-    color: $blue;
+    &:last-child {
+      color: $blue;
+    }
   }
 }
