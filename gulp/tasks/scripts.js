@@ -6,7 +6,7 @@ module.exports = function(gulp, plugins, conf) {
     return gulp.src([
         resource_dir+'/**/*.js'
     	])
-    .pipe(plugins.eslint('.esLintConfig.json'))
+    .pipe(plugins.eslint())
     .pipe(plugins.eslint.format('compact', process.stderr))
     .pipe(plugins.eslint.results(results => {
         // Called once for all ESLint results.
