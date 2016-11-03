@@ -6,12 +6,14 @@ module.exports = function(gulp, plugins, conf) {
     return gulp.src([
         resource_dir+'/**/*.js'
     	])
-    .pipe(plugins.jshint())
-    .pipe(plugins.jshint.reporter('default'))
+    .pipe(plugins.eslint('.esLintConfig.json'))
+    .pipe(plugins.eslint.format())
     .pipe(plugins.sourcemaps.init())
+    .pipe(plugins.babel({
+        presets: ['es2015']
+    })).on('error', swallowError)
     .pipe(plugins.concat('main.js'))
-    .pipe(plugins.uglify())
-    .on('error', swallowError)
+    .pipe(plugins.uglify()).on('error', swallowError)
     .pipe(plugins.sourcemaps.write('.'))
         .pipe(gulp.dest(conf.destination_dir+'/js/'));
   };

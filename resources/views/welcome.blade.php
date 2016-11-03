@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <script href="{{elixir('js/vendor.js')}}"></script>
-        <script href="{{elixir('js/main.js')}}"></script>
+        <script src="{{elixir('js/vendor.js')}}"></script>
+        <script src="{{elixir('js/main.js')}}"></script>
     </body>
 </html>
